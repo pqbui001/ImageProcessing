@@ -15,6 +15,7 @@
 
 BEGIN_MESSAGE_MAP(COpenGLApplicationApp, CWinApp)
 	ON_COMMAND(ID_APP_ABOUT, &COpenGLApplicationApp::OnAppAbout)
+	ON_COMMAND(ID_FILE_OPEN, &COpenGLApplicationApp::OnFileOpen)
 END_MESSAGE_MAP()
 
 
@@ -127,3 +128,20 @@ void COpenGLApplicationApp::OnAppAbout()
 
 // COpenGLApplicationApp message handlers
 
+
+
+void COpenGLApplicationApp::OnFileOpen()
+{
+	// TODO: Add your command handler code here
+	CFileDialog dlg(TRUE);
+
+	CString filename;
+
+	if (dlg.DoModal() == IDOK)
+	{
+
+		filename = dlg.GetPathName(); // return full path and filename
+
+	}
+
+}
