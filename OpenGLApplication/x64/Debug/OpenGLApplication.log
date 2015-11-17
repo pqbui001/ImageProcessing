@@ -1,0 +1,30 @@
+﻿Build started 11/17/2015 3:25:49 PM.
+     1>Project "C:\Users\ekgal\Documents\GitHub\ImageProcessing\OpenGLApplication\OpenGLApplication.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /Od /D WIN32 /D _WINDOWS /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"x64\Debug\ImageProcessing.MFC.pch" /Fo"x64\Debug\\" /Fd"x64\Debug\vc120.pdb" /Gd /TP /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /Od /D WIN32 /D _WINDOWS /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"x64\Debug\ImageProcessing.MFC.pch" /Fo"x64\Debug\\" /Fd"x64\Debug\vc120.pdb" /Gd /TP /errorReport:prompt ChildView.cpp DIBSurface.cpp MainFrm.cpp ImageProcessing.cpp OpenGLSurface.cpp OpenGLView.cpp
+         ChildView.cpp
+         DIBSurface.cpp
+         MainFrm.cpp
+         ImageProcessing.cpp
+         OpenGLSurface.cpp
+         OpenGLView.cpp
+         Generating Code...
+       ResourceCompile:
+         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\rc.exe /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /l"0x0409" /Ix64\Debug\ /nologo /fo"x64\Debug\OpenGLApplication.res" OpenGLApplication.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\ekgal\Documents\GitHub\ImageProcessing\x64\Debug\ImageProcessing.MFC.exe" /INCREMENTAL /NOLOGO OpenGL32.lib glu32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:"C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\Include\Manifest\dpiaware.manifest" /DEBUG /PDB:"C:\Users\ekgal\Documents\GitHub\ImageProcessing\x64\Debug\ImageProcessing.MFC.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"wWinMainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\ekgal\Documents\GitHub\ImageProcessing\x64\Debug\ImageProcessing.MFC.lib" /MACHINE:X64 x64\Debug\OpenGLApplication.res
+         x64\Debug\ChildView.obj
+         x64\Debug\DIBSurface.obj
+         x64\Debug\MainFrm.obj
+         x64\Debug\ImageProcessing.obj
+         x64\Debug\OpenGLSurface.obj
+         x64\Debug\OpenGLView.obj
+         x64\Debug\stdafx.obj
+         OpenGLApplication.vcxproj -> C:\Users\ekgal\Documents\GitHub\ImageProcessing\x64\Debug\ImageProcessing.MFC.exe
+     1>Done Building Project "C:\Users\ekgal\Documents\GitHub\ImageProcessing\OpenGLApplication\OpenGLApplication.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:06.64
