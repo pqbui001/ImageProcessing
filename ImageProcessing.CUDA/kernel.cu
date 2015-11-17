@@ -15,5 +15,8 @@ __global__ void addKernel(int *c, const int *a, const int *b)
 int main()
 {
    
+
+
+
 	return 0;
 }
