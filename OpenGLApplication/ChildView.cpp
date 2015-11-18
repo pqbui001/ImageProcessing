@@ -4,6 +4,7 @@
 #include "stdafx.h"
 #include "ImageProcessing.h"
 #include "ChildView.h"
+#include "Utility.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -25,7 +26,6 @@ BEGIN_MESSAGE_MAP(CChildView, COpenGLView)
 END_MESSAGE_MAP()
 
 
-
 // CChildView message handlers
 
 BOOL CChildView::PreCreateWindow(CREATESTRUCT& cs) 
@@ -43,6 +43,9 @@ BOOL CChildView::PreCreateWindow(CREATESTRUCT& cs)
 
 void CChildView::DoOpenGLDraw()
 {
+	//TODO: Read GetImage in a place not constantly redrawn.
+	string imagePath = Utility::GetImagePath();
+
 	//	Clear the buffers.
 	glClearColor(0, 0, 0, 1);
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);

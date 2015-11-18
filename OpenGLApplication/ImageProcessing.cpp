@@ -4,12 +4,12 @@
 #include "stdafx.h"
 #include "ImageProcessing.h"
 #include "MainFrm.h"
+#include "Utility.h"
 
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
 #endif
-
 
 // COpenGLApplicationApp
 
@@ -141,7 +141,14 @@ void COpenGLApplicationApp::OnFileOpen()
 	{
 
 		filename = dlg.GetPathName(); // return full path and filename
-
+		
+		// Convert a TCHAR string to a LPCSTR
+		CT2CA pszConvertedAnsiString(filename);
+		// construct a std::string using the LPCSTR input
+		std::string filePath(pszConvertedAnsiString);
+		//Utility util;
+		Utility::SetImagePath(filePath);
+		string tmp = Utility::GetImagePath();
 	}
 
 }
